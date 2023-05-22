@@ -11,6 +11,7 @@ import plotly.express as px
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, "style.css","https://use.fontawesome.com/releases/v5.15.3/css/all.css"])
 app.config.suppress_callback_exceptions = True
+server=app.server
 
 # Abre el archivo CSV y encuentra el valor máximo en la columna 'revenue'
 max_revenue = max(
